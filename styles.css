@@ -1,0 +1,1491 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin&family=Pompiere&family=Tangerine:wght@700&display=swap');
+
+html, body
+{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0;
+    background-color: var(--body);
+    position: relative;
+    margin:auto;
+    min-width:600px;
+    width: 1270px;
+}
+
+:root
+{
+    /* theme colors */
+    --body:#E8E8E8;
+    --heading:#393E46;
+    --navlinks:#707070;
+    --heart:#FF577F;
+    --login:#002E31;      /*(add your work button and cart also) */
+    --explorebtn:#87D9EC;
+    --circle1:#495464;
+    --circle2:#BBBFCA;
+    --circle3:#E8E8E8;
+    --rectangle:#061031;
+    --box1:#1CC5DB;
+    --box2:#CCF2F4;
+    --box3:#F4F9F9;
+    --landscape:#90A5B1;
+    --potrait:#BBBBBB;
+    --black:#000000;
+    --white:#FFFFFF;
+}
+
+/* navigation */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    
+    margin-top: -1rem;
+}
+.logo
+{
+    font-family: 'Tangerine', cursive;
+    font-size: 6rem;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    margin-top: -6rem;
+    margin-left: 2rem;
+    z-index: 1;
+    opacity: 1;
+    animation: scale 1s forwards;
+    
+   
+}
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-top: -9rem;
+    z-index: 1;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Cabin', sans-serif;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+.home a:hover
+{
+    color: var(--box1);
+}
+.about a:hover
+{
+    color: var(--box1);
+}
+.contact a:hover
+{
+    color: var(--box1);
+}
+.artist a:hover
+{
+    color: var(--box1);
+}
+
+ .heart1 a {
+   color: var(--heart);
+   font-size: 1.6rem;
+  
+}
+.heart:hover
+{
+    font-size: 2rem;
+    color: var(--box1);
+}
+.cart
+{
+    font-size: 1.6rem;
+}
+.cart a:hover
+{
+    color: var(--box1);
+}
+.login a:hover
+{
+    color: var(--box1);
+}
+.bar
+{
+    position: absolute;
+    right: 5%;
+    top: 0.3%;
+   display: inline-block;
+   color:var(--rectangle);
+   font-size:2rem;
+   z-index:1500;
+}
+.wishlist1
+{
+    position: absolute;
+    right: 18.5%;
+    top: 0.3%;
+   display: inline-block;
+   color:var(--heart);
+   font-size:2rem;
+    /* z-index: 1; */
+}
+.wishlist1:hover
+{
+    color: var(--box1);
+}
+.cart1
+{
+    position: absolute;
+    right: 11%;
+    top: 0.3%;
+   display: inline-block;
+   color:var(--rectangle);
+   font-size:2rem;
+   z-index:1500;
+}
+.burger
+{
+    display: none;
+    cursor: pointer;
+}
+.wishlist
+{
+    display: none;
+    cursor: pointer;
+}
+.shopping
+{
+    display: none;
+    cursor: pointer;
+}
+.heart1:hover
+{
+    color: var(--heart);
+}
+
+/* ----------------------header-image---------------------- */
+.header-image
+{
+    width: 100%;
+   height: 620px;
+   margin-top: -22%;
+   position: relative;
+   z-index: 0;
+}
+
+.button1
+{
+    position: absolute;
+    z-index: 1;
+    font-size: 20px;
+    background: var(--login);
+    padding: 20px 80px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: -28%;
+    margin-left: 3%;
+    outline: none;
+    text-align: center;
+    /* display: inline-block; */
+    animation: fadeUp 1s forwards;
+}
+
+.button2 
+{
+    position: absolute;
+    z-index: 1;
+    font-size: 20px;
+    background: var(--explorebtn);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 20px;
+    margin-top: -21%;
+    margin-left: 6%;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    /* display: inline-block; */
+    animation: fadeUp 1s forwards;
+    }
+
+    .button1 a {
+        position: center;
+        z-index: 2;
+        font-size: x-large;
+        color: var(--white);
+        text-decoration: none;
+        display:inline;
+        font-family: 'Abril Fatface', cursive;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+    .button1 a:hover
+    {
+        font-style: italic;
+    }
+    .button2 a {
+        position: center;
+        z-index: 2;
+        font-size: x-large;
+        color:var(--black);
+        text-decoration: none;
+        font-family: 'Abril Fatface', cursive;
+        font-weight: bolder;
+        letter-spacing: 1.5px;
+    }
+    .button2 a:hover
+    {
+        font-style: italic;
+    }
+    
+/* ----------------------header-image---------------------- */
+
+/* ------------------------add your work ------------------*/
+
+.rectangle
+{   position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: var(--rectangle);
+    margin-top: 30%;
+    z-index: 0;
+    text-align: center;
+}
+.work
+{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    word-spacing: 1rem;
+    margin-top: 20%;
+    margin-left: 27%;
+    animation: fadeUp 2s forwards;
+    animation-delay: 0.5s;
+    
+}
+.how-to
+{
+    color: #BBBBBB;
+}
+.add-your-work
+{
+    margin-top: 26%;
+    background-color:#00E1FF;
+    border-radius: 20px;
+    width: 250px;
+    height: 55px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+    box-shadow: -3px 5px 25px  var(--box);
+    border: none;
+}
+.add-your-work a
+{
+    position: center;
+    z-index: 2;
+    font-size: x-large;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+}
+.add-your-work:hover
+{
+    background: transparent;
+    border: 5px solid #00E1FF;
+}
+.add-your-work a:hover{
+    color: var(--white);
+}
+.triangle-down
+{   
+   margin-top: 0;
+    width: 0;
+	height: 0;
+	border-left: 674px solid transparent;
+	border-right: 590px solid transparent;
+	border-top: 80px solid var(--rectangle);
+    filter: drop-shadow(8px 8px 10px gray);
+    max-width: 100%; 
+   
+}
+.rectangle1
+{    
+    position: absolute;
+    background-color: var(--box1);
+    height: 400px;
+    width: 25%;
+    float: left;
+    display: inline;
+    margin-left: 6.25%;
+    margin-top: -53%;
+    z-index: 1;
+  
+    
+}
+.rectangle2
+{    
+    position: absolute;
+    z-index: 1;
+    background-color: var(--box2);
+    height: 400px;
+    width: 25%;
+    float: left;
+    display: inline;
+    margin-left: 37.5%;
+    margin-top: -53%;
+}
+.rectangle3
+{    
+    position: absolute;
+    z-index: 1;
+    background-color: var(--box3);
+    height: 400px;
+    width: 25%;
+    float: left;
+    display: inline;
+    margin-left: 68.75%;
+    margin-top: -53%;
+}
+
+.circle1
+{
+    margin-left: 31%;
+    margin-top: -105%;
+    height: 100px;
+    width:100px;
+    background-color: var(--circle1);
+    border-radius: 50%; 
+    border: 5px solid #BBBBBB;
+    z-index: 1;
+    display: inline;
+    float: left;
+}
+.circle2
+{
+   margin-left: 31%;
+   margin-top: -130%;
+    height: 100px;
+    width:100px;
+    background-color:var(--circle2);
+    border-radius: 50%; 
+    border: 5px solid #707070;
+    z-index: 1;
+    display: inline;
+    float: left;
+}
+.circle3
+{
+    margin-top: -106%;
+    margin-left: 31%;
+    height: 100px;
+    width:100px;
+    background-color: var(--circle3);
+    border-radius: 50%; 
+    border: 5px solid var(--black);
+    z-index: 1;
+    display: inline;
+    float: left;
+}
+.one, .two, .three
+{
+    font-size: 3rem;
+    margin-left: 25%;
+    margin-top: 21%;
+}
+.one
+{
+    color: var(--white);
+}
+.heading1
+{
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 8.5%;
+   margin-top: 25%;
+}
+.heading2
+{
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left:22% ;
+    margin-top: 25%;
+}
+.heading3
+{
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left:16% ;
+    margin-top: 25%;
+}
+.info1
+{
+    font-size: 2rem;
+    font-family: 'Pompiere', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--circle1);
+    margin-top: 15%;
+}
+.info2
+{
+    font-size: 2rem;
+    font-family: 'Pompiere', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--circle1);
+    margin-top: 15%;
+}
+.info3
+{
+    font-size: 2rem;
+    font-family: 'Pompiere', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--circle1);
+    margin-top: 15%;
+}
+/* -------------x-----------add your work -------x-----------*/
+
+/*------------------------ type of work -----------------------*/
+.type-of-art
+{
+    position: relative;
+}
+.type
+{
+    margin-top: 35%
+}
+.type-text
+{
+    position: relative;
+}
+.landscape-text
+{
+  font-size: 10.5rem; 
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 6.25%;
+  opacity: 1;
+  animation: fadeUp 1s forwards;
+}
+.landscape-text a
+{
+    color: var(--landscape);
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    font-style: italic;
+    display: inline;
+}
+.landscape-text a:hover
+{
+    font-style: normal;
+    color: var(--black);
+}
+.portrait-text
+{
+    font-size: 7.7rem; 
+    position: absolute;
+    margin-top: -11.5%;
+    margin-left: 48%;
+    opacity: 1;
+    animation: fadeUp 1s forwards;
+}
+.portrait-text a
+{
+  
+    color: var(--potrait);
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    display: inline;
+}
+.portrait-text a:hover
+{
+    font-style: normal;
+    color: var(--black);
+}
+.abstract-text
+{
+    
+    font-size: 6.5rem; 
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 73%;
+    animation: fadeUp 1s forwards
+}
+.abstract-text a
+{
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    display: inline;
+}
+.abstract-text a:hover
+{
+    font-style: normal;
+    color: var(--black);
+}
+.landscape
+{
+  width: 40%;
+  margin-left: 6.25%;
+  height: 350px;
+  box-shadow: 10px 10px 40px gray;
+}
+
+.portrait
+{
+    position: absolute;
+    width: 20%;
+    height: 350px;
+    margin-left: 50%;
+    margin-top: -28.5%;
+    box-shadow: 10px 10px 40px gray;
+}
+.abstract
+{
+    position: absolute;
+    width: 20%;
+    height: 350px;
+    margin-left: 73.75%;
+    margin-top: -28.5%;
+    box-shadow: 10px 10px 40px gray;
+}
+.contemporary
+{
+    width: 18%;
+    height: 350px;
+    margin-left: 6.25%;
+    margin-top: 4%;
+    box-shadow: 10px 10px 40px gray;
+}
+.modern-art
+{
+    width: 18%;
+    height: 350px;
+    margin-left: 3.75%;
+    margin-top: 4%;
+    box-shadow: 10px 10px 40px gray;
+}
+.other
+{
+    position: absolute;
+    width: 44%;
+    height: 350px;
+    margin-left: 50%;
+    margin-top: -28.4%;
+    box-shadow: 10px 10px 40px gray;
+}
+.contemporary-text
+{
+    font-size: 4.5rem; 
+    margin-left: 3%;
+    margin-top: 0;
+    animation: fadeUp 1s forwards
+}
+.contemporary-text a  
+{
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    display: inline;
+} 
+.contemporary-text a:hover
+{
+    font-style: normal;
+    color: var(--black);
+}
+.modern-art-text
+{
+    font-size: 5.5rem; 
+    margin-left: 25%;
+    margin-top: -11%;
+    animation: fadeUp 1s forwards
+} 
+.modern-art-text a  
+{
+    color:var(--potrait);
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    display: inline;
+} 
+.modern-art-text a:hover
+{
+    font-style: normal;
+    color: var(--black);
+}
+.other-text
+{
+    font-size: 8rem; 
+    margin-left: 58%;
+    margin-top: -16%;
+    animation: fadeUp 1s forwards
+} 
+.other-text a  
+{
+
+    color:var(--landscape);
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    display: inline;
+}
+.other-text a:hover
+{
+    font-style: normal;
+    color: var(--black);
+}
+
+/*------------x------------ type of work ---------------x--------*/
+
+/* ------------------------how to buy -----------------------------*/
+
+.how-to-buy
+{
+    margin-top: 20%;
+}
+
+.triangle-up
+{
+    margin-top: 0%;
+    margin-bottom: 0;
+    width: 0;
+	height: 0;
+	border-left: 674px solid transparent;
+	border-right: 590px solid transparent;
+	border-bottom: 80px solid var(--rectangle);
+    filter: drop-shadow(8px 8px 10px gray);
+    max-width: 100%; 
+}
+.main1
+{
+    margin-top: -25%;
+}
+
+.rect
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: var(--rectangle);
+    margin-top: 25%;
+    z-index: 0;
+    text-align: center;
+}
+.explore
+{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    word-spacing: 1rem;
+    margin-top: 8%;
+    margin-left: 30%;
+    animation: fadeUp 1s forwards;
+}
+.how-to-2
+{
+    color: #BBBBBB;
+}
+.explore-work
+{
+    margin-top: 2%;
+    background-color:#00E1FF;
+    border-radius: 20px;
+    width: 255px;
+    height: 57px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+    box-shadow: -3px 5px 25px  var(--box);
+    border: none;
+}
+.explore-work a
+{
+    position: center;
+    z-index: 2;
+    font-size: x-large;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+}
+.explore-work:hover
+{
+    background: transparent;
+    border: 5px solid #00E1FF;
+}
+.explore-work a:hover{
+    color: var(--white);
+}
+
+.rect1
+{
+    
+    background-color: var(--box1);
+    height: 400px;
+    width: 25%;
+    float: left;
+    display: inline;
+    margin-left: 6.25%;
+    margin-top: 10%;
+    z-index: 0;
+    
+}
+
+.headings1
+{
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 1%;
+    margin-top: 10%;
+   
+}
+.infos1
+{
+    font-size: 2rem;
+    font-family: 'Pompiere', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--circle1);
+    margin-top: 27%;
+}
+.rect2
+{
+    /* position: absolute; */
+    z-index: 1;
+    background-color: var(--box2);
+    height: 400px;
+    width: 25%;
+    float: left;
+    display: inline;
+    margin-left: 6.25%;
+    margin-top: 10%;
+    
+}
+.headings2
+{
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 1%;
+    margin-top: 10%;
+   
+}
+.infos2
+{
+    font-size: 2rem;
+    font-family: 'Pompiere', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--circle1);
+    margin-top: 20%;
+}
+.rect3
+{
+    /* position: absolute; */
+    z-index: 1;
+    background-color: var(--box3);
+    height: 400px;
+    width: 25%;
+    float: left;
+    display: inline;
+    margin-left: 6.25%;
+    margin-top: 10%;
+}
+.headings3
+{
+    color: var(--black);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 1%;
+    margin-top: 10%;
+   
+}
+.infos3
+{
+    font-size: 2rem;
+    font-family: 'Pompiere', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--circle1);
+    margin-top: 20%;
+}   
+.circles1
+{
+    position: absolute;
+    margin-top: 12.7%;
+    margin-left: -80%;
+    height: 100px;
+    width:100px;
+    background-color: var(--circle1);
+    border-radius: 50%; 
+    border: 5px solid #BBBBBB;
+    z-index: 1500;
+    display: inline;
+    float: left;
+}
+.circles2
+{
+    margin-left: -48%;
+    margin-top: 12.7%;
+    position: absolute;
+     height: 100px;
+     width:100px;
+     background-color:var(--circle2);
+     border-radius: 50%; 
+     border: 5px solid #707070;
+     z-index: 1;
+     display: inline;
+     float: left;
+}
+.circles3
+{
+   
+ 
+   position: absolute;
+    margin-left: -17%;
+    margin-top: 12%;
+    height: 100px;
+    width:100px;
+    background-color: var(--circle3);
+    border-radius: 50%; 
+    border: 5px solid var(--black);
+    z-index: 1;
+    display: inline;
+    float: left;
+}
+.one1, .two2, .three3
+{
+    font-size: 3rem;
+    margin-left: 25%;
+    margin-top: 21%;
+}
+.one1
+{
+    color: var(--white);
+}
+/* ------------x------------how to buy -------------x----------------*/
+
+/*------------------------- footer ---------------------------------*/
+
+.footer2
+{
+    background: url(./images/footer-image.png);
+    width: 100%;
+    height: 400px;
+    margin-top: 40%;
+}
+.entire
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.icons
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 2%;
+    font-size: 2rem;
+    color: #00EEFF;
+    
+}
+
+.linkedin
+{
+    margin-bottom: 1rem;
+}
+.linkedin:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.facebook
+{
+    margin-bottom: 1rem;
+    
+}
+.facebook:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.instagram
+{
+    margin-bottom: 1rem;
+}
+.instagram:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.twitter
+{
+    margin-bottom: 1rem;
+}
+.twitter:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.mail
+{
+    margin-bottom: 1rem;
+}
+.mail:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.name2
+{
+    position: absolute;
+    font-family: 'Tangerine', cursive;
+    color: var(--box1);
+    font-size: 6rem;
+    margin-top: 8%;
+    margin-left: -5.5%;
+}
+.Grey
+{
+    position: absolute;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-top: 15%;
+    opacity: 0.7;   
+    margin-left: -8%;
+}
+li
+{
+    list-style: none;
+}
+.meetfeedback a
+{
+    
+    font-size: 1.1rem;
+    color: var(--explorebtn);
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    margin-left: -13%;
+    margin-top: 10%;
+}
+.meet a
+{
+ position: absolute;
+ margin-top: 10%;
+}
+.feedback a
+{
+    position: absolute;
+    margin-top: 14%;
+}
+.Center
+{
+   margin-left: 9%;
+}
+.meet a:hover
+{
+    color: var(--white);
+}
+.feedback a:hover
+{
+    color: var(--white);
+}
+/*---------------x---------- footer ---------------x------------------*/
+
+@media screen and (max-width:768px){
+    /*------------------ navigation----------------------------- */
+    body
+    {
+        overflow-x: hidden;
+    }
+    .nav-links
+    {
+        position: absolute;
+        right: 0px;
+        height: 620px;
+        top: 8vh;
+        margin-top: 2%;
+        background-color: var(--rectangle);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1500;
+        width: 40%;
+    }
+    .nav-links a
+    {
+        color: var(--white);
+        font-size: 2rem;
+    }
+    .heart1 a
+    {
+        font-size: 3rem;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .heart1
+    {
+        display: none;
+    }
+    .wishlist1
+    {
+        font-size: 3rem;
+        z-index: 1;
+    }
+    .wishlist
+    {
+        display: block;
+    }
+    .cart
+    {
+        display: none;
+    }
+    .cart1
+    {
+        font-size: 3rem;
+    }
+    .shopping
+    {
+        display: block;
+    }
+    .bar
+    {
+        font-size: 3rem;
+    }
+    .burger
+    {
+        display: block;
+    }
+  
+
+   /*-----------x------- navigation---------------x-------------- */
+
+/*-------------------------- header-image -----------------------*/
+.header-image
+{
+    height: 750px;
+    margin-bottom: 20%;
+}
+.button1
+{
+    font-size: 20px;
+    padding: 30px 80px;
+    margin-top: -55%;
+}
+.button2
+{
+    font-size: 20px;
+    padding: 27px 40px;
+    margin-top: -45%;
+}
+.button1 a {
+  
+    font-size:1.6rem;
+    letter-spacing: 0.3rem;
+}
+.button2 a {
+  
+    font-size:1.8rem;
+    letter-spacing: 0.3rem;
+}
+/* --------------x--------------header-image------------x-----------*/
+
+
+/* ----------------------------how to add work -----------------------*/
+
+.rectangle
+{
+    height: 700px;
+    
+}
+.rectangle1
+{
+    width: 32%;
+    height: 550px;
+    margin-left: 1%;
+    margin-top: -80%;
+}
+.rectangle2
+{
+  width: 32%;
+  height: 550px;
+  margin-left: 34%;
+  margin-top: -80%;
+}
+.rectangle3
+{
+    width: 32%;
+    height: 550px;
+    margin-left: 67%;
+    margin-top: -80%;
+}
+.circle1
+{
+    height: 150px;
+    width: 150px;
+    border-width: 10px;
+    margin-top: -138%;
+}
+.circle2
+{
+    height: 150px;
+    width: 150px;
+    border-width: 10px;
+    margin-top: -157%;
+}
+.circle3
+{
+    height: 150px;
+    width: 150px;
+    border-width: 10px;
+    margin-top: -139%;
+}
+.work
+{
+    font-size: 7rem;
+    margin-top: 35%;
+    margin-left: 15%;
+}
+.add-your-work
+{
+    margin-top: 45%;
+    width: 350px;
+    height: 67px;
+}
+.add-your-work a
+{
+    font-size: 2.5rem;
+}
+.heading1, .heading2 , .heading3
+{
+    font-size: 2.5rem;
+}
+.heading1
+{
+    margin-left: 25%;
+}
+.heading2
+{
+    margin-left: 15%;
+}
+.heading3
+{
+    margin-left: 29%;
+}
+.info1 , .info2 , .info3
+{
+    font-size: 3.4rem;
+}
+.one , .two , .three
+{
+    font-size: 5rem;
+}
+/* ---------------x-------------how to add work ------------x-----------*/
+
+/*------------------------- type of art -----------------------*/
+.landscape
+{
+    margin-left: 3%;
+    width: 55%;
+    height: 450px;
+    box-shadow: 10px 10px 40px gray;
+}
+.portrait
+{
+    margin-top: -35.7%;
+ margin-left: 64%;
+ width: 33%;
+ height: 540px;
+ box-shadow: 10px 10px 40px gray;
+}
+.abstract
+{
+ margin-top: 5%;
+ margin-left: 3%;
+ width: 33%;
+ height: 600px;
+ box-shadow: 10px 10px 40px gray;
+}
+.contemporary
+{
+ margin-top: 58%;
+ margin-left: 3%;
+ width: 43%;
+ height: 650px;
+ box-shadow: 10px 10px 40px gray;
+}
+.modern-art
+{
+ margin-top: 30%;
+ margin-left: 7%;
+ width: 43%;
+ height: 730px;
+ box-shadow: 10px 10px 40px gray;
+}
+.other
+{
+    margin-left: 42%;
+    margin-top: -99%;
+    width: 55%;
+    height: 460px;
+    box-shadow: 10px 10px 40px gray;
+}
+.landscape-text
+{
+    font-size: 11.5rem;
+    margin-left: 3%;
+    margin-top: -17%;
+}
+.portrait-text
+{
+   font-size: 8.7rem ; 
+   margin-left: 46%;
+   margin-top: -13.5%;
+}
+.abstract-text
+{
+    font-size: 7rem;
+    margin-top: -12%;
+}
+.contemporary-text
+{
+ font-size: 6rem;
+ margin-top: 2%;
+}
+.modern-art-text
+{
+ font-size: 6.2rem;
+ margin-left: 30%;
+ margin-top: -13%;
+}
+.other-text
+{
+font-size: 8rem;
+margin-left: 63%;
+margin-top: -18%;
+}
+/*--------------x----------- type of art ----------x-------------*/
+
+/* ------------------------how to buy-------------------------------- */
+
+.rect
+{
+    height: 700px;
+   
+}
+.rect1
+{
+    width: 32%;
+    height: 600px;
+    margin-left: 1%;
+    margin-top: 26%;
+    
+}
+.rect2
+{
+    width: 32%;
+    height: 600px;
+    margin-left: 1%;
+    margin-top: 26%;
+}
+.rect3
+{
+    margin-top: 26%;
+    width: 32%;
+    height: 600px;
+    margin-left: 1%;
+}
+.circles1
+{
+    border-width: 10px;
+    margin-top: 20%;
+    margin-left: -89%;
+    width: 150px;
+    height: 150px;
+}
+.circles2
+{
+    border-width: 10px;
+    margin-top: 20%;
+    margin-left: -55%;
+    width: 150px;
+    height: 150px;
+}
+.circles3
+{
+    border-width: 10px;
+    margin-top: 20%;
+    margin-left: -24%;
+    width: 150px;
+    height: 150px;
+}
+.explore
+{
+    font-size: 7rem;
+    margin-top: 15%;
+    margin-left: 19%;
+}
+.explore-work
+{
+    margin-top: 4%;
+    width: 390px;
+    height: 80px;
+  
+}
+.explore-work a
+{
+    font-size:2.5rem ;
+}
+.headings1, .headings2 , .headings3
+{
+    font-size: 2.3rem;
+    
+}
+.infos1 , .infos2 , .infos3
+{
+    font-size: 3.5rem;
+    margin-top: 1%;
+}
+.one1 , .two2 , .three3
+{
+    font-size: 5rem;
+}
+/* ------------x------------how to buy------------x-------------------- */
+
+/* ----------------------footer ------------------------------------*/
+
+.footer2
+{
+    margin-top: 70%;
+    height: 600px;
+}
+
+.icons
+{
+    font-size: 3.5rem;
+    margin-left: 5%;
+}
+.name2
+{
+    font-size: 10rem;
+    margin-left: -20%;
+}
+.Grey
+{
+    font-size: 2.7rem;
+    margin-top: 21%;
+    margin-left: -25%;
+}
+
+.meetfeedback a
+{
+    font-size: 2.4rem;
+    margin-left: -23%;
+    margin-top: 13%;
+}
+.feedback a
+{
+margin-top: 19%;
+}
+/* ------------x----------footer -------------x-----------------------*/
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+
+/* --------------------------animations --------------------------*/
+
+
+@keyframes fadeUp {
+    0% {
+      
+        transform: translateY(100%);
+    }
+    100% {
+        
+        transform: translateY(0);
+    }
+}
+@keyframes scale {
+    0% {
+      
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes grow {
+    0% {
+      
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+       width: 25%;
+    }
+}
+
+
+
+/* --------------------------animations --------------------------*/
